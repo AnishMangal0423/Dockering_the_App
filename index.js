@@ -1,6 +1,8 @@
 const express= require('express')
 const dotenv=require('dotenv')
 
+dotenv.config();
+
 const app=express();
 
 app.get('/home' , (req , res) =>{
@@ -11,5 +13,6 @@ app.get('/home' , (req , res) =>{
 
 
 app.listen(process.env.PORT , ()=>{
+ 
     console.log("running on 3000");
 })
