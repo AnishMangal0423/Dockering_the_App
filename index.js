@@ -14,5 +14,7 @@ app.get('/home' , (req , res) =>{
 
 app.listen(process.env.PORT , ()=>{
  
-    console.log("running on 3000");
+    console.log("running on " + process.env.PORT );
 })
+
+
