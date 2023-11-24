@@ -1,4 +1,5 @@
 const express= require('express')
+const dotenv=require('dotenv')
 
 const app=express();
 
@@ -9,6 +10,6 @@ app.get('/home' , (req , res) =>{
 })
 
 
-app.listen(3100 , ()=>{
-    console.log("running on 3100");
+app.listen(process.env.PORT , ()=>{
+    console.log("running on 3000");
 })
